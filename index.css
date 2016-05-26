@@ -1,0 +1,94 @@
+.mainH {
+    height: 40px;
+    text-align: center;
+    background-color: black;
+    
+}
+
+.mainH h1 {
+    font-size: 15px; 
+    margin: 0px;
+    color: white;
+    padding: 13px;
+    font-weight: bold;
+}
+
+nav{
+    height: 60px;
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0px; 
+    display: block;
+    clear: right; 
+    background-color: white;
+    padding-left: 400px; 
+    text-align: left;
+    margin-top: 40px;
+}
+
+nav ul li {
+    display: inline;
+    background-color: #EEE;
+    border: 2px solid;
+    border-color: #F3F3F3 #BBB #BBB #F3F3F3;
+    padding: .5em;
+}    
+
+ 
+nav ul li a {
+    color: black; 
+    text-decoration: underline;
+    font-size: 13px; 
+    font-weight: bold;
+}
+ 
+nav ul li a:hover {
+    color: red;
+}
+
+nav ul li .red {
+    color: red;
+}
+
+nav ul li .red:hover {
+    color: black;
+}
+
+nav img{
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    width: 80px;
+    height: 80px;
+    display:block;
+    
+}
+
+nav p {
+    position: absolute;
+    top: 75px;
+    left: 130px;  
+    font: bold italic 110% serif;
+    font-size: 25px;
+}
+
+.section{
+    position: relative;
+}
+
+.section img{
+    width: 100%;
+}
+
+.section form{
+    position: absolute;
+    left: 35%; 
+    top: 90%;
+    padding: 5px;
+    background: white;
+}
+
+
+

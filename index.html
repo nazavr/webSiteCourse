@@ -2,55 +2,58 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Travel</title>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Travel Guide</title>
+        <link rel="shortcut icon" href="photo/favicon.ico" type="image/x-icon">
+        <link href="reset.css" rel="stylesheet" type="text/css">
+        <link href="index.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <header>
-            <p align="center"><img src="phonelogo.png" width="20" height="20" alt="phonelogo"> telefon: <b>+38 (050) 430-81-11</b>
-               &nbsp;&nbsp;&nbsp;&nbsp;<img src="maillogo.png" width="20" height="20" alt="maillogo"> e-mail: <b>nazavr@gmail.com</b>
-            </p>
-            <hr>
+        <header class="mainH">
+            <h1>
+                telefon: +38 (050) 430-81-11 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                e-mail: nazavr@gmail.com
+            </h1>
         </header>
         <nav>
-            <div align="center">
-                <img src="travellogo.png" width="110" height="110" hspace="20" vspace="20" alt="travellogo">
-                <br>
-                <table border="1">
-                    <tr>
-                        <th><a href="main.html">MAIN</a></th>
-                        <th> <a href="posts.html">POSTS</a></th>
-                        <th><a href="profile.html">PROFILE</a></th>
-                    </tr>
-                </table><br><br>
-            </div>
-            <img src="travelfon.jpg" alt="travelfon" width="100%">
-            <div align="center">
-                <form method="post" action="URL">
+            <img src="photo/travellogo.png" alt="travellogo">
+            <p>Travel Guide</p>
+            <ul>
+                <li><a class="red" href="main.html">MAIN</a></li>
+                <li><a href="posts.html">POSTS</a></li>
+                <li><a href="profile.html">PROFILE</a></li>
+            </ul>
+        </nav>
+        <section>
+        <header class="section">
+            <img src="photo/travelfon.jpg" alt="travelfon">
+            <form method="post" action="URL">
                     <fieldset>
-                        <label for="search">Search</label>
                         <input id="search" type="search" required placeholder="please enter your text"> 
                         <input type="submit" value="Search">
                     </fieldset>
                 </form>
-            </div>
-            <hr>
-        </nav>
+        </header>
+        
+            
+        </section>
+        
+        
+        
         <article>
             <div align="center">
                 <pre>LATEST POST    ALL POST   COUNTRY</pre>
-                <img src="photo1.jpg" width="200" height="200" alt="photo1">
-                <img src="photo2.jpg" width="200" height="200" alt="photo2">
-                <img src="photo3.jpg" width="200" height="200" alt="photo3">
-                <img src="photo4.jpg" width="200" height="200" alt="photo4">
+                <img src="photo/photo1.jpg" width="200" height="200" alt="photo1">
+                <img src="photo/photo2.jpg" width="200" height="200" alt="photo2">
+                <img src="photo/photo3.jpg" width="200" height="200" alt="photo3">
+                <img src="photo/photo4.jpg" width="200" height="200" alt="photo4">
             </div>
         </article>
         <hr>
         <footer>
             <div align="center">
-                <img src="travellogo.png" width="50" height="50" hspace="25" alt="travellogo">
-                <p><img src="phonelogo.png" width="10" height="10" alt="phonelogo"> telefon: <b>+38 (050) 430-81-11</b></p>
-                <p><img src="maillogo.png" width="10" height="10" alt="maillogo"> e-mail: <b>nazavr@gmail.com</b></p>
+                <img src="photo/travellogo.png" width="50" height="50" hspace="25" alt="travellogo">
+                <p><img src="photo/phonelogo.png" width="10" height="10" alt="phonelogo"> telefon: <b>+38 (050) 430-81-11</b></p>
+                <p><img src="photo/maillogo.png" width="10" height="10" alt="maillogo"> e-mail: <b>nazavr@gmail.com</b></p>
             </div>
         </footer>
     </body>
