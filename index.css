@@ -1,6 +1,5 @@
 body{
     background-color: grey;
-    border: 1px solid;
 }
 
 .allpages{
@@ -88,5 +87,8 @@ nav ul li .red:hover {
     background: white;
 }
 
-
-
+article {
+    display: block;
+    text-align: center;
+    background-color: white;
+}
