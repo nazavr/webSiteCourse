@@ -26,7 +26,7 @@ body{
 nav{
     height: 80px;
     position: relative;
-    color: white;
+    background-color: white;
 }
 
 nav img{
@@ -40,7 +40,7 @@ nav img{
 nav ul {
     position: absolute;
     display: block;
-    left: 30%; 
+    left: 300px; 
     top: 31px;
 }
 
@@ -82,9 +82,9 @@ nav ul li .red:hover {
 
 .section form{
     position: absolute;
-    left: 42%; 
+    left: 38%; 
     top: 90%;
-    padding: 5px;
+    padding: 7px;
     background: white;
 }
 
