@@ -1,5 +1,5 @@
 body{
-    background-color: grey;
+    background-color: #DCDCDC;
 }
 
 .allpages{
@@ -9,12 +9,13 @@ body{
 
 .mainH {
     height: 40px;
-    text-align: center;
     background-color: black;
+    display: flex;
+    justify-content: space-around;
     
 }
 
-.mainH h1 {
+.mainH li {
     font-size: 15px; 
     margin: 0px;
     color: white;
@@ -22,73 +23,146 @@ body{
     font-weight: bold;
 }
 
-nav{
+@media all and (max-width: 700px) {
+  .mainH {
+    flex-direction: column;
+    padding: 0;
+    height: 54px;
+  }
+  .mainH li{
+    text-align: center; 
+    padding: 5px;
+  }
+}
+
+.photo{
     height: 80px;
-    position: relative;
     background-color: white;
-}
+    display: flex;
+    }
 
-nav img{
-    position: absolute;
-    top: 10px;
-    left: 25px;
+.photo img{
     height: 60px;
-    display:block;
-}
-
-nav ul {
-    position: absolute;
-    display: block;
-    left: 300px; 
-    top: 31px;
-}
-
-nav ul li {
-    display: inline;
-    background-color: #EEE;
-    border: 1px solid;
-    padding: .5em;
-    margin: 3px;
-    border-radius: 13px;
-}    
-
+    margin: auto;
  
-nav ul li a {
-    color: black; 
-    font-size: 13px; 
+}
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  background: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 16px 40px;
+  color: white;
+}
+
+.navigation a:hover {
+  background: #696969;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-direction: column;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+}
+
+.fon {
+  height: 400px;
+  width: 100%;
+  background-image: url(photo/fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section{
+  background-color: white;
+  height: auto;
+
+}
+
+.section {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.section a {
+    text-decoration: none;
+    display: block;
+    font-size: 15px; 
+    margin: 0px;
+    color: black;
+    padding: 13px;
     font-weight: bold;
 }
- 
-nav ul li a:hover {
+
+.section a:hover {
     color: red;
 }
 
-nav ul li .red {
-    color: red;
+.latestpost a{
+  /*margin-right: 60px;*/
+  color: red;
 }
 
-nav ul li .red:hover {
+.latestpost a:hover{
+  color: black;
+}
+
+@media all and (max-width: 600px) {
+  .section {
+    flex-direction: column;
+    padding: 0;
+    height: 147px;
+  }
+  .section li{
+    text-align: center; 
+    padding: 3px;
     color: black;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
 }
 
-.section{
-    position: relative;
+article{
+  background-color: white;
+  height: auto;
 }
 
-.section img{
-    width: 100%;
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.section form{
-    position: absolute;
-    left: 38%; 
-    top: 90%;
-    padding: 7px;
-    background: white;
-}
-
-article {
-    display: block;
-    text-align: center;
-    background-color: white;
+.flex-container img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  line-height: 150px;
+  border: 2px solid black;
 }
