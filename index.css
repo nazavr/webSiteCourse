@@ -5,14 +5,13 @@ body{
 .allpages{
     width: 70%;
     margin: auto;
-}
+  }
 
 .mainH {
     height: 40px;
     background-color: black;
     display: flex;
     justify-content: space-around;
-    
 }
 
 .mainH li {
@@ -37,9 +36,10 @@ body{
 
 .photo{
     height: 80px;
-    background-color: white;
+    background-color: #F5F5F5;
     display: flex;
-    }
+    justify-content: center;
+}
 
 .photo img{
     height: 60px;
@@ -53,7 +53,7 @@ body{
   background: black;
   display: flex;
   justify-content: space-around;
-}
+ }
 
 .navigation a {
   text-decoration: none;
@@ -95,7 +95,7 @@ body{
 }
 
 section{
-  background-color: white;
+  background-color: #F5F5F5;
   height: auto;
 
 }
@@ -146,7 +146,7 @@ section{
 }
 
 article{
-  background-color: white;
+  background-color: #F5F5F5;
   height: auto;
 }
 
@@ -154,15 +154,24 @@ article{
   padding: 0;
   margin: 0;
   list-style: none;
-  justify-content: space-around;
+  justify-content: center;
   display: flex;
   flex-flow: row wrap;
 }
 
 .flex-container img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   margin: 10px;
   line-height: 150px;
   border: 2px solid black;
+}
+
+.footerphoto {
+  height: 200px;
+  width: 100%;
+  background-image: url(photo/footerphoto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
