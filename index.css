@@ -167,11 +167,21 @@ article{
   border: 2px solid black;
 }
 
-.footerphoto {
+footer {
   height: 200px;
   width: 100%;
   background-image: url(photo/footerphoto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerphoto {
+  flex-direction: column;
+}
+
+.footerphoto li {
+  height: 50px;
 }
