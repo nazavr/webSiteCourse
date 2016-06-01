@@ -34,17 +34,40 @@ body{
   }
 }
 
+nav {
+   background-color: #F5F5F5;
+}
+
 .photo{
     height: 80px;
     background-color: #F5F5F5;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.photo img{
+.social {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.social img:hover {
+  border: 1px solid #808080;
+}
+.photo > img{
     height: 60px;
+    margin: 10px;
+}
+
+@media all and (max-width: 700px) {
+  .social {
+    height: 0; 
+    overflow: hidden;
+  }
+  .photo {
     margin: auto;
- 
+    width: 50%;
+  }
 }
 
 .navigation {
@@ -168,20 +191,61 @@ article{
 }
 
 footer {
-  height: 200px;
+  height: 165px;
   width: 100%;
   background-image: url(photo/footerphoto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+
+}
+
+.footerInf {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+ 
+.footerInf > img{
+  height: 80px;
+  margin-top: auto;
+  margin: 30px;
+} 
+
+.navigationF {
+  margin-top: auto;
+  list-style: none;
+  background: #000000;
+  opacity: 0.3;
 }
 
-.footerphoto {
-  flex-direction: column;
+.navigationF a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 40px;
+  color: white;
+  text-align: center;
+  border: 1px solid;
 }
 
-.footerphoto li {
-  height: 50px;
+.navigationF a:hover {
+  background: #000000;
+  color: #FF0000;
+}
+
+@media all and (max-width: 700px) {
+  .footerInf {
+   flex-direction: column;
+  }
+  .footerInf > img{
+   height: 50px;
+   margin: 10px auto;
+  }
+  .navigationF {
+   margin: auto;
+   width: 50%;
+  }
+  .navigationF a{
+    padding: 5px 40px;
+  }
 }
