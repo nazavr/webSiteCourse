@@ -43,6 +43,7 @@ nav {
     background-color: #F5F5F5;
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 
 .social {
@@ -348,3 +349,26 @@ footer {
     padding: 5px 40px;
   }
 }
+
+/* стиль на всплливаюче вікноо соціальних мереж
+.popup {
+ display:none; 
+ width: 400px; 
+ height: 80px; 
+ font: 13px normal 'Tahoma'; 
+ background: rgba(0,0,0,0.3);; 
+ border: 3px solid #D3D3D3;
+ text-align: center;
+ margin: auto;
+ position: absolute;
+}
+
+.press {
+ cursor: pointer;
+}
+
+.popup p {
+ color: white;
+ background: grey;
+}*/
+
