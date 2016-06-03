@@ -108,22 +108,11 @@ nav {
   }
 }
 
-.fon {
-  height: 400px;
-  width: 100%;
-  background-image: url(photo/fon.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 section{
   background-color: #F5F5F5;
   height: auto;
 
 }
-
-/*слово Profile в лінку PROFILE*/
 
 section h1{
     margin-left: 100px;
@@ -135,133 +124,51 @@ section h1{
   
 }
 
-.section {
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.section a {
-    text-decoration: none;
-    display: block;
-    font-size: 15px; 
-    margin: 0px;
-    color: black;
-    padding: 13px;
-    font-weight: bold;
-}
-
-.section a:hover {
-    color: red;
-}
-
-.latestpost a{
-  /*margin-right: 60px;*/
-  color: red;
-}
-
-.latestpost a:hover{
-  color: black;
-}
-
-@media all and (max-width: 600px) {
-  .section {
-    flex-direction: column;
-    padding: 0;
-    height: 147px;
-  }
-  .section li{
-    text-align: center; 
-    padding: 3px;
-    color: black;
-    border-top: 1px solid rgba(255,255,255,0.3); 
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-  }
-}
-
 article{
   background-color: #F5F5F5;
   height: auto;
 }
 
-/*секція артікл лінка MAIN*/
-
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  justify-content: center;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.flex-container img {
-  width: 250px;
-  height: 250px;
-  margin: 10px;
-  line-height: 150px;
-  border: 2px solid black;
-}
-
-/*секція артікл лінка Profile*/
-
 .profileinfo {
-  padding: 10px;
+  padding-top: 10px;
   margin: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .profileinfo img {
   height: 250px;
-  margin: 15px auto;
-  margin-right: 80px;
+  margin-top: 10px;
   border: 2px solid black;
 }
 
-.profileinfo p{
-  margin-top: 15px;
-  font-size: 15px;
-  text-align: left;
-}
-
-.nb {
-  color: red;
-  font-size: 30px;
+.usa{
+  font-size: 20px;
   font-weight: bold;
-  text-align: left;
+  padding-bottom: 3px;
+  background-color: #D3D3D3;
+  color: black;
+  width: 569px;
+  margin: auto;
 }
 
-.aboutme {
+.text {
   margin: auto 90px;
-  padding: 10px;
+  padding: 20px;
   padding-bottom: 30px;
   text-align: justify;
 }
 
-.aboutme li{
-  padding-top: 5px;
-  padding-bottom: 5px;
+.text ul {
+  list-style-type: square;
 }
 
-.title{
-  font-size: 17px;
-  font-weight: bold;
-  margin: 10px;
-  color: red;
-  text-align: left;
+.text li {
+  padding: 4px;
+
 }
-
-.highlight {
-  background-color: #D3D3D3;
-  text-align: left;
-  color: black;
-  font-weight: bold;
-}
-
-
 
 @media all and (max-width: 1120px) {
   .profileinfo {
@@ -272,20 +179,31 @@ article{
     height: 200px;
     margin: auto;
    } 
-   .nb, .title {
-     display: flex;
-     justify-content: center;
-     margin: 0;
-     padding: 0;
-   }
-   
    section h1 {
      text-align: center;
      padding-top: 15px;
      margin: 0;
    }
-   .aboutme {
-     margin: 10px 40px;
+   .usa {
+     width: 458px;
+   }
+   .text {
+      margin: auto 40px;
+    }
+     
+}
+
+@media all and (max-width: 750px) {
+  .profileinfo {
+     flex-direction: column;
+     text-align: center;
+   }
+  .profileinfo li img{
+    height: 150px;
+    margin: auto;
+   } 
+   .usa {
+     width: 344px;
    }
 }
 
