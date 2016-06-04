@@ -354,7 +354,7 @@ footer {
 /* стиль на всплливаюче вікноо соціальних мереж*/
 .popup {
  display:none; 
- width: 400px; 
+ width: 300px; 
  height: 80px; 
  font: 13px normal 'Tahoma'; 
  background: rgba(0,0,0,0.3);; 
@@ -366,6 +366,7 @@ footer {
 
 .press {
  cursor: pointer;
+ padding: 10px;
 }
 
 .popup p {
