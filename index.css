@@ -351,7 +351,7 @@ footer {
   }
 }
 
-/* стиль на всплливаюче вікноо соціальних мереж
+/* стиль на всплливаюче вікноо соціальних мереж*/
 .popup {
  display:none; 
  width: 400px; 
@@ -371,5 +371,5 @@ footer {
 .popup p {
  color: white;
  background: grey;
-}*/
+}
 
