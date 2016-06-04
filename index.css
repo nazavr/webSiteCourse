@@ -354,19 +354,21 @@ footer {
 /* стиль на всплливаюче вікноо соціальних мереж*/
 .popup {
  display:none; 
- width: 300px; 
- height: 80px; 
- font: 13px normal 'Tahoma'; 
+ width: 285px; 
+ height: 65px; 
+ font: 10px normal 'Tahoma'; 
  background: rgba(0,0,0,0.3);; 
  border: 3px solid #D3D3D3;
  text-align: center;
  margin: auto;
  position: absolute;
+ margin-left: 192px;
+ margin-top: 5px;
 }
 
 .press {
  cursor: pointer;
- padding: 10px;
+ padding: 3px;
 }
 
 .popup p {
