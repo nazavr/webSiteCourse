@@ -6,7 +6,7 @@ body{
     width: 70%;
     margin: auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  }
+}
 
 .mainH {
     height: 40px;
@@ -263,8 +263,6 @@ article{
   font-weight: bold;
 }
 
-
-
 @media all and (max-width: 1120px) {
   .profileinfo {
      flex-direction: column;
@@ -352,9 +350,9 @@ footer {
 }
 
 /* стиль на всплливаюче вікноо соціальних мереж*/
-.popup {
+.popup, .popup2, .popup3 {
  display:none; 
- width: 285px; 
+ width: 250px; 
  height: 65px; 
  font: 10px normal 'Tahoma'; 
  background: rgba(0,0,0,0.3);; 
@@ -362,17 +360,19 @@ footer {
  text-align: center;
  margin: auto;
  position: absolute;
- margin-left: 192px;
+ margin-left: 195px;
  margin-top: 5px;
 }
 
-.press {
+.press, .press2, .press3 {
  cursor: pointer;
  padding: 3px;
 }
 
-.popup p {
+.nav p {
  color: white;
- background: grey;
+ padding-bottom: 2px;
+ padding-top: 2px;
 }
+
 

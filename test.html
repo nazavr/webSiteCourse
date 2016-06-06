@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <link href="reset.css" rel="stylesheet" type="text/css">
+        <link href="test.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="form-container">
+                <h1>Contact Form</h1>
+                <h2>Please write a review of my website</h2>
+                <form id="contact-form" name="contact-form">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                        <tr>      
+                            <td width="18%"><label for="namefield">Name</label></td>
+                            <td width="45%"><input id="namefield" type="text" class="namefield" required placeholder="please enter your name"></td>
+                            <td width="37%">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email</label></td>
+                            <td><input id="email" type="text" class="email" required placeholder="please enter your e-mail"></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Message</label></td>
+                            <td><textarea id="msg" name="message" class="message" cols="35" rows="5"></textarea></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button id="btn-send">Send</button>
+                                <button id="btn-close">Close</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="feedback2.js"></script>
+    </body>
+</html>
