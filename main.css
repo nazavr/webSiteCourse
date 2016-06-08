@@ -122,7 +122,7 @@ nav {
 /* стиль на всплливаюче вікноо соціальних мереж*/
 .popup, .popup2, .popup3 {
  display:none; 
- width: 250px; 
+ width: 230px; 
  height: 65px; 
  background-color: white; 
  border: 3px solid #D3D3D3;
@@ -130,8 +130,8 @@ nav {
  text-align: center;
  margin: auto;
  position: absolute;
- margin-left: 197px;
- margin-top: 5px;
+ margin-left: 205px;
+ margin-top: 7px;
 }
 
 .press, .press2, .press3 {
