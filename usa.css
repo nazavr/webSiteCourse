@@ -1,135 +1,14 @@
-body{
-    background-color: #DCDCDC;
-}
-
-.allpages{
-    width: 70%;
-    margin: auto;
-  }
-
-.mainH {
-    height: 40px;
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-}
-
-.mainH li {
-    font-size: 15px; 
-    margin: 0px;
-    color: white;
-    padding: 13px;
-    font-weight: bold;
-}
-
-@media all and (max-width: 700px) {
-  .mainH {
-    flex-direction: column;
-    padding: 0;
-    height: 54px;
-  }
-  .mainH li{
-    text-align: center; 
-    padding: 5px;
-  }
-}
-
-nav {
-   background-color: #F5F5F5;
-}
-
-.photo{
-    height: 80px;
-    background-color: #F5F5F5;
-    display: flex;
-    justify-content: space-around;
-}
-
-.social {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-.social img:hover {
-  border: 1px solid #808080;
-}
-.photo > img{
-    height: 60px;
-    margin: 10px;
-}
-
-@media all and (max-width: 700px) {
-  .social {
-    height: 0; 
-    overflow: hidden;
-  }
-  .photo {
-    margin: auto;
-    width: 50%;
-  }
-}
-
-.navigation {
-  list-style: none;
-  margin: 0; 
-  background: black;
-  display: flex;
-  justify-content: space-around;
- }
-
-.navigation a {
-  text-decoration: none;
-  display: block;
-  padding: 16px 40px;
-  color: white;
-}
-
-.navigation a:hover {
-  background: #696969;
-}
-
-@media all and (max-width: 800px) {
-  .navigation {
-    justify-content: center;
-  }
-}
-
-@media all and (max-width: 600px) {
-  .navigation {
-    flex-direction: column;
-    padding: 0;
-  }
-  .navigation a { 
-    text-align: center; 
-    padding: 10px;
-    border-top: 1px solid rgba(255,255,255,0.3); 
-    border-bottom: 1px solid rgba(0,0,0,0.1); 
-  }
-}
-
-section{
-  background-color: #F5F5F5;
-  height: auto;
-
-}
-
 section h1{
     margin-left: 100px;
+    margin-bottom: 0;
     padding-top: 30px;
     padding-bottom: 0;
     color: red;
     font-size: 20px;
     font-weight: bold;
-  
 }
 
-article{
-  background-color: #F5F5F5;
-  height: auto;
-}
-
-.profileinfo {
+.textinfo {
   padding-top: 10px;
   margin: 0;
   list-style: none;
@@ -138,7 +17,7 @@ article{
   text-align: center;
 }
 
-.profileinfo img {
+.textinfo img {
   height: 250px;
   margin-top: 10px;
   border: 2px solid black;
@@ -171,11 +50,11 @@ article{
 }
 
 @media all and (max-width: 1120px) {
-  .profileinfo {
+  .textinfo {
      flex-direction: column;
      text-align: center;
    }
-  .profileinfo li img{
+  .textinfo li img{
     height: 200px;
     margin: auto;
    } 
@@ -194,75 +73,15 @@ article{
 }
 
 @media all and (max-width: 750px) {
-  .profileinfo {
+  .texteinfo {
      flex-direction: column;
      text-align: center;
    }
-  .profileinfo li img{
+  .textinfo li img{
     height: 150px;
     margin: auto;
    } 
    .usa {
      width: 344px;
    }
-}
-
-footer {
-  height: 165px;
-  width: 100%;
-  background-image: url(photo/footerphoto.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-
-}
-
-.footerInf {
-  display: flex;
-  justify-content: center;
-}
- 
-.footerInf > img{
-  height: 80px;
-  margin-top: auto;
-  margin: 30px;
-} 
-
-.navigationF {
-  margin-top: auto;
-  list-style: none;
-  background: #000000;
-  opacity: 0.3;
-}
-
-.navigationF a {
-  text-decoration: none;
-  display: block;
-  padding: 10px 40px;
-  color: white;
-  text-align: center;
-  border: 1px solid;
-}
-
-.navigationF a:hover {
-  background: #000000;
-  color: #FF0000;
-}
-
-@media all and (max-width: 700px) {
-  .footerInf {
-   flex-direction: column;
-  }
-  .footerInf > img{
-   height: 50px;
-   margin: 10px auto;
-  }
-  .navigationF {
-   margin: auto;
-   width: 50%;
-  }
-  .navigationF a{
-    padding: 5px 40px;
-  }
 }

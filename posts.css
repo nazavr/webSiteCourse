@@ -1,0 +1,30 @@
+section h1{
+    margin-left: 100px;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 0;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+ 
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-container img {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  line-height: 150px;
+  border: 2px solid black;
+}
+
+.flex-container img:hover {
+  opacity: 0.5;
+}

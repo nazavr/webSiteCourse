@@ -5,23 +5,64 @@
         <title>Travel | POSTS</title>
         <link rel="shortcut icon" href="photo/favicon.ico" type="image/x-icon">
         <link href="reset.css" rel="stylesheet" type="text/css">
-        <link href="index.css" rel="stylesheet" type="text/css">
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link href="posts.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header class=allpages>
-            <header>
-                <ul class="mainH">
-                    <li>Telephone: +38 (050) 430-81-11</li>
-                    <li>E-mail: nazavr@gmail.com</li>
-                </ul>
-            </header>
+            <div id="main-container">
+                <div id="form-container">
+                    <h1>Contact Form</h1>
+                    <h2>Please write a review of my website</h2>
+                    <form id="contact-form" name="contact-form">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                            <tr>      
+                                <td width="18%"><label for="namefield">Name</label></td>
+                                <td width="45%"><input id="namefield" type="text" class="namefield" placeholder="please enter your name"></td>
+                                <td width="37%">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email</label></td>
+                                <td><input id="email" type="text" class="email" placeholder="please enter your e-mail"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td><label for="message">Message</label></td>
+                                <td><textarea id="msg" name="message" class="message" cols="35" rows="5"></textarea></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button id="btn-send">Send</button>
+                                    <button id="btn-close">Close</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div id="container"></div>
+            </div>
+            <header class="mainH"> </header>
             <nav>
                 <div class="photo">
+                    <div class="popup">
+                        <p><a href="https://www.facebook.com/nazar.bostrikov?ref=bookmarks" target="_blank">nazar.bostrikov</a></p>
+                        <input type="button" class="press" value="BACK">
+                    </div>
+                    <div class="popup2">
+                        <p>nazavr@gmail.com</p>
+                        <input type="button" class="press2" value="BACK">
+                    </div>
+                    <div class="popup3">
+                        <p>d_nazavr</p>
+                        <input type="button" class="press3" value="BACK">
+                    </div>
                     <img src="photo/logotravel.png" alt="logotravel">
                     <ul class="social">
-                        <li><a href="index.html"><img src="photo/facebooklogo.png" alt="photo1"></a></li>
-                        <li><a href="index.html"><img src="photo/gmaillogo.png" alt="photo2"></a></li>
-                        <li><a href="index.html"><img src="photo/skypelogo.png" alt="photo3"></a></li>
+                        <li><a href="#" class="show"><img src="photo/facebooklogo.png" alt="photo1"></a></li>
+                        <li><a href="#" class="show2"><img src="photo/gmaillogo.png" alt="photo2"></a></li>
+                        <li><a href="#" class="show3"><img src="photo/skypelogo.png" alt="photo3"></a></li>
+                        <li><a href="#" class="show4"><img src="photo/feedback.png" title="Please leave you comment" alt="photo4"></a></li>
                     </ul>
                 </div>
                 <ul class="navigation">
@@ -35,15 +76,15 @@
             </section>
             <article>
                 <ul class="flex-container">
-                    <li><a href="usa.html"><img src="photo/photo1.jpg" alt="photo1"></a></li>
-                    <li><img src="photo/photo2.jpg" alt="photo2"></li>
-                    <li><img src="photo/photo3.jpg" alt="photo3"></li>
-                    <li><img src="photo/photo4.jpg" alt="photo4"></li>
-                    <li><img src="photo/photo5.jpg" alt="photo5"></li>
-                    <li><img src="photo/photo6.jpg" alt="photo6"></li>
-                    <li><img src="photo/photo7.jpg" alt="photo7"></li>
-                    <li><img src="photo/photo8.jpg" alt="photo8"></li>
-                    <li><img src="photo/photo9.jpg" alt="photo9"></li>
+                    <li><a href="usa.html"><img src="photo/photo1_usa.jpg" alt="photo1"></a></li>
+                    <li><a href="usa.html"><img src="photo/photo2.jpg" alt="photo2"></a></li>
+                    <li><a href="usa.html"><img src="photo/photo3.jpg" alt="photo3"></a></li>
+                    <li><a href="usa.html"><img src="photo/photo4.jpg" alt="photo4"></a></li>
+                    <li><a href="usa.html"><img src="photo/photo5.jpg" alt="photo5"></a></li>
+                    <li><a href="usa.html"><img src="photo/photo6.jpg" alt="photo6"></a></li>
+                    <li><a href="usa.html"><img src="photo/photo7.jpg" alt="photo7"></a></li>
+                    <li><a href="usa.html"><img src="photo/photo8.jpg" alt="photo8"></a></li>
+                    <li><a href="usa.html"><img src="photo/photo9.jpg" alt="photo9"></a></li>
                 </ul>
             </article>
             <footer>
@@ -54,12 +95,12 @@
                         <li><a href="posts.html">POSTS</a></li>
                         <li><a href="profile.html">PROFILE</a></li>
                     </ul>
-                    <!--<ul class="footerphoto">
-                        <li><p><img src="photo/phonelogo.png" alt="phonelogo">+38 (050) 430-81-11</p></li>
-                        <li><p><img src="photo/emaillogo.png" alt="maillogo">nazavr@gmail.com</p></li>
-                    </ul>-->
                 </div>
             </footer>
         </header>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="social.js"></script>
+        <script type="text/javascript" src="feedback.js"></script>
+        <script type="text/javascript" src="clickfeedback.js"></script>
     </body>
 </html>

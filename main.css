@@ -1,0 +1,246 @@
+body{
+    background-color: #DCDCDC;
+}
+
+.allpages{
+    width: 70%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* секція форми для фідбека*/
+
+#main-container{
+      display: none;
+      width:400px;
+      margin-top: 180px;
+      margin-left: 20%;
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 0;
+      position: absolute;
+      background-color: #f5f5f5;
+      z-index: 1000;
+      }
+#form-container{
+      background-color:#f5f5f5;
+      padding:15px;
+      border-radius:12px;
+      }
+
+td{
+      white-space: nowrap;
+      }
+
+h1{
+      color:#777777;
+      font-size:22px;
+      font-weight:normal;
+
+      text-transform:uppercase;
+      margin-bottom:5px;
+      }
+h2{
+      font-weight:normal;
+      font-size:10px;
+      text-transform:uppercase;
+      color:#aaaaaa;
+      margin-bottom:15px;
+      border-bottom:1px solid #eeeeee;
+      margin-bottom:15px;
+      padding-bottom:10px;
+      }
+label{
+      text-transform:uppercase;
+      font-size:10px;
+      font-family:Tahoma,Arial,Sans-serif;
+      }
+
+textarea{
+      color:#404040;
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:12px;
+      }
+
+#container {
+      text-align: center;
+      color: black;
+}
+
+/* кінець секції форми для фідбека*/
+
+.mainH {
+    height: 48px;
+    background-color: black;
+}
+
+nav {
+   background-color: #F5F5F5;
+}
+
+.photo{
+    height: 80px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.social img:hover {
+  border: 1px solid #808080;
+}
+.photo > img{
+    height: 60px;
+    margin: 10px;
+}
+
+@media all and (max-width: 700px) {
+  .social {
+    height: 0; 
+    overflow: hidden;
+  }
+  .photo {
+    margin: auto;
+    width: 50%;
+  }
+}
+
+/* стиль на всплливаюче вікноо соціальних мереж*/
+.popup, .popup2, .popup3 {
+ display:none; 
+ width: 250px; 
+ height: 65px; 
+ background-color: white; 
+ border: 3px solid #D3D3D3;
+ border-radius: 10px;
+ text-align: center;
+ margin: auto;
+ position: absolute;
+ margin-left: 197px;
+ margin-top: 5px;
+}
+
+.press, .press2, .press3 {
+ cursor: pointer;
+ font: 13px normal; 
+}
+
+.photo p {
+ color: black;
+ font: 18px normal; 
+ margin-bottom: 7px;
+ padding-top: 2px;
+ 
+}
+
+/* кінець стилю на всплливаюче вікноо соціальних мереж*/
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  background: black;
+  display: flex;
+  justify-content: space-around;
+ }
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 16px 40px;
+  color: white;
+}
+
+.navigation a:hover {
+  background: #696969;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-direction: column;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+}
+
+article, section{
+  background-color: #F5F5F5;
+  height: auto;
+}
+
+footer {
+  height: 165px;
+  width: 100%;
+  background-image: url(photo/footerphoto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.footerInf {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+ 
+.footerInf > img{
+  height: 80px;
+  margin-top: auto;
+  margin: 30px;
+} 
+
+.navigationF {
+  margin-top: auto;
+  list-style: none;
+  background: #000000;
+  opacity: 0.3;
+}
+
+.navigationF a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 40px;
+  color: white;
+  text-align: center;
+  border: 1px solid;
+}
+
+.navigationF a:hover {
+  background: #000000;
+  color: #FF0000;
+}
+
+@media all and (max-width: 700px) {
+  .footerInf {
+   flex-direction: column;
+  }
+  .footerInf > img{
+   height: 50px;
+   margin: 10px auto;
+  }
+  .navigationF {
+   margin: auto;
+   width: 50%;
+  }
+  .navigationF a{
+    padding: 5px 40px;
+  }
+}
+

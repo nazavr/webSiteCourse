@@ -1,0 +1,90 @@
+section h1{
+    margin-left: 100px;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 0;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profileinfo {
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.profileinfo img {
+  height: 250px;
+  margin: 15px auto;
+  margin-right: 25px;
+  border: 2px solid black;
+}
+
+.profileinfo p{
+  margin-top: 15px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.nb {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.aboutme {
+  margin: auto 90px;
+  padding: 10px;
+  padding-bottom: 30px;
+  text-align: justify;
+}
+
+.aboutme li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.title{
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px;
+  color: red;
+  text-align: left;
+}
+
+.highlight {
+  background-color: #D3D3D3;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+}
+
+@media all and (max-width: 1120px) {
+  .profileinfo {
+     flex-direction: column;
+     text-align: center;
+   }
+  .profileinfo li img{
+    height: 200px;
+    margin: auto;
+   } 
+   .nb, .title {
+     display: flex;
+     justify-content: center;
+     margin: 0;
+     padding: 0;
+   }
+   
+   section h1 {
+     text-align: center;
+     padding-top: 15px;
+     margin: 0;
+   }
+   .aboutme {
+     margin: 10px 40px;
+   }
+}
